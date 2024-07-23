@@ -95,7 +95,7 @@ z-index: 1;
     align-items: center;
     row-gap: 10px;
     flex-wrap: wrap;
-    padding-left: 80px;
+    /* padding-left: 80px; */
 }
 
 .img_box{
@@ -294,7 +294,9 @@ z-index: 1;
       
     }
     
-
+    .img_box{
+      /* text-align: center; */
+    }
 
 
     .tyre_black_box{
