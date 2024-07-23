@@ -1,0 +1,319 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/* a{
+    text-decoration: none; 
+    color: #868E98;
+} */
+
+a{
+    text-decoration: none; 
+    color: #868E98;
+}
+/* nav */
+.nav_container{
+    background-color: #D7D8DE;
+    width:100% ;
+    height: 100px;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    color: #868E98;
+    padding-top: 20px;
+  
+
+}
+.nav_li{
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap:wrap ;
+   gap: 20px;
+}
+.contact{
+    background-color: white;
+    border:3px solid #868E98;
+    color:orange;
+    border-radius: 100px;
+    width: 120px;
+    height: 40px;
+   
+}
+.contact:hover{
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+   
+}
+/* end of nav */
+
+/* Start of Carousel and herobox */
+.herobox {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+}
+.gradient{
+height: 100%;
+width: 100%;
+position: absolute;
+background-image: linear-gradient(to right,black, black);
+opacity: 0.7;
+z-index: 1;
+
+}
+.details{
+    color: #ffffff;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    z-index: 1;
+  
+}
+/* video div */
+.video_div{
+    padding-top:5%;
+    padding-left: 200px;
+    padding-right: 100px;
+    background-color: #D7D8DE;
+    width: 100%;
+    /* text-align: start; */
+  
+}
+/* end of video div */
+
+/* Start of Img section */
+.img_container{
+    background-color: #D7D8DE;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 80px;
+}
+
+.img_box{
+    width: 300px;
+    height: 400px;
+    background-color: #E2E2E2;
+    border-radius: 5%;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.img_header{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.hover_content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+    padding-left: 10px;
+    display:flex;
+    align-items: center;
+    color: white;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+.hover_content:hover{
+    opacity: 1;
+
+}
+.hover_content > *{
+    transform: translate(20px);
+    transition: transform 0.25s;
+}
+.hover_content:hover > * {
+    transform: translate(0);
+}
+/* end of img  */
+
+/* start of office folder */
+.office_container{
+    background-color: #D7D8DE;
+    
+}
+.office_header{
+    padding-top:100px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.office_building{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    justify-content: space-around;
+}
+.office_img_div{
+    width: 700px ;
+    height: 600px;
+
+}
+.office_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* end */
+
+/* start of folder div */
+.tyre_black_box{
+    background-color: black;
+    color: #ffffff;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;   
+    position: relative;
+    padding-top: 50px;
+    
+}
+
+.tyre_img_div{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+.img_tyre{
+    width: 100%;
+    height: 100%;
+}
+.tyre_text{
+    width: 400px;
+    height: 400px;
+    /* position: absolute;
+    right: 100px; */
+}
+
+/* Start of footer  */
+    .footer_container {
+        background-color: black;
+        color:#ffffff;
+        padding-left: 100px;
+        padding-top:40px ;
+        box-sizing: border-box;
+        /* height: 400px; */
+    }
+    #footerbutton{
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    width: 120px;
+    height: 40px;
+    }
+    .media{
+        background-color: orange;
+         color: #000000;
+          width: 25px;
+          height: 25px;
+          border-radius: 3px;
+          text-align: center;
+          font-size: larger;
+    }
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        color: #ffffff;
+    }
+    .footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .fixed_icon{
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        position: fixed;
+       bottom: 0;
+        left: 0;
+       padding-left: 10px;
+       padding-top: 10px;
+       box-sizing: border-box;
+    }
+
+/* End of footer  */
+
+
+
+
+/* media query */
+@media (max-width:480px) , (max-width:1180px){
+    body, html{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+
+    }
+    
+    .nav_container{
+        height: 150px;
+        padding: 0;
+    }
+    .video_div{
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    .herobox {
+        width: 100%;
+        height: 800px;
+        background-color: black;
+        /* background-size: cover; */
+        position: relative;
+        object-fit: contain;
+    }
+    .video{
+        width: 100%;
+      
+    }
+    
+
+
+
+    .tyre_black_box{
+        margin-top:200px;
+        height: 600px;
+    }
+    .tyre_img_div{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        
+}
+.img_tyre{
+    width: 100%;
+    height: 100%;
+}
+.tyre_text{
+    padding-top:250px;
+}
+}
